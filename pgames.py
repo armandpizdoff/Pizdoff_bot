@@ -5,11 +5,9 @@ token = '1499171628:AAGvzeTWBUTYlsq2b_zv8GNQ5CDXwlfPdWE'
 
 @bot.message_handler(commands=['help'])
 def help_message(message):
-    bot.send_message(message.chat.id, text =
-                     'Я не даю траханье, и у меня нет списка команд, кроме /start. Сорян \n'
-                     'Интересные команды вы найдёте у @Only_Not_Crankshaft_bot')
+    bot.send_message(message.chat.id, text ='сосиииии')
 
-@bot.message_handler(commands=['start'])
+@bot.message_handler(commands=['games'])
 def start_message(message):
     markup = telebot.types.InlineKeyboardMarkup()
     markup.add(telebot.types.InlineKeyboardButton(text='Открыть канал armandpzdoff', url = 'https://www.twitch.tv/armandpzdoff'))
